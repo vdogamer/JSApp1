@@ -1,3 +1,4 @@
+/*
 const arr1 = ['one', 'string', 100, false, []];
 console.log(arr1[2]);
 
@@ -23,3 +24,16 @@ console.log(arr4);
 
 // shortest way to clone an array
 const arr5 = arr1.map((x)=>x);
+*/
+
+const person = {
+    "firstName" : "Larry",
+    "lastName" : "Stevens",
+    "x1" : "one",
+    "x2" : "two",
+    "interests" :  ["JavaScript", "HTML5", "CSS3"]
+}
+
+console.log(person["firstName"]);
+let x = 1;
+console.log(person["x"+x]);
