@@ -1,11 +1,23 @@
 
 const url = 'j1.json';
 let data = '';
+
+const localData = localStorage.
+getItem('temp');
+console.log(localData);
+
+myJson();
+// console.log(person);
+
+
+
 function myJson(){
     fetch(url)
-    .then(rep => rep.json())
+    .then(rep => rep.text())
     .then(json => {
-        data = json;
-        console.log(data);
+        data = JSON.parse(json);
+        // console.log(data);
+        let str = JSON.stringify.apply(data);
+        localStorage.setItem('temp', str);
     })
 }
